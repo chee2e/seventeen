@@ -14,14 +14,14 @@
         </script>
     </jsp:attribute>
     <jsp:body>
-        <h2><c:if test="${visit['new']}">New </c:if>Visit</h2>
+        <h2><c:if test="${visit['new']}">New </c:if>Receipt</h2>
 
         <span id="pet"><strong>Pet</strong></span>
         <table class="table table-striped" aria-describedby="pet">
             <thead>
             <tr>
                 <th scope="col">Name</th>
-                <th scope="col">Birth Date</th>
+                <th scope="col">Date</th>
                 <th scope="col">Type</th>
                 <th scope="col">Owner</th>
             </tr>
