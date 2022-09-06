@@ -4,7 +4,7 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=spring-petclinic_spring-framework-petclinic&metric=alert_status)](https://sonarcloud.io/dashboard?id=spring-petclinic_spring-framework-petclinic)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=spring-petclinic_spring-framework-petclinic&metric=coverage)](https://sonarcloud.io/dashboard?id=spring-petclinic_spring-framework-petclinic)
 
-GCP Cloud 과제 수행을 위한 Java Spring 으로 개발된 Sample Application 입니다. 
+Spring 배포 과제 수행을 위한 Java Spring 으로 개발된 Sample Application 입니다. 
 
 **3-layer architecture** (i.e. presentation --> service --> repository) 로 Tomcat 에 배포하여 2 Tier 로 구성하거나
 또는 nginx 등의 Web 서버를 통해서 Tomcat 을 연결하는 3 Tier 구성을 테스트할 수 있습니다. 
@@ -14,29 +14,6 @@ GCP Cloud 과제 수행을 위한 Java Spring 으로 개발된 Sample Applicatio
 [See the presentation here](http://fr.slideshare.net/AntoineRey/spring-framework-petclinic-sample-application) (2017 update)
 
 ## Running petclinic locally
-
-### Tomcat 설치 및 Start
-Tomcat 설치 가이드를 참조하여 Tomcat 설치 후, tomcat-users.xml 에 User 및 Role 추가
-
-[ Ubuntu 18.04 : Tomcat 9 설치하는 방법 ](https://jjeongil.tistory.com/1351)
-
-Tomcat User 및 Role 추가
-
-```
-# $TOMCAT_HOME/conf/tomcat-users.xml 파일에 아래 행들을 추가
-
-    <role rolename="manager-script"/>
-    <role rolename="manager-gui"/>
-    <role rolename="manager-jmx"/>
-    <role rolename="manager-status"/>
-    <user username="tomcat" password="tomcat" roles="manager-gui,manager-script,manager-status,manager-jmx"/>
-```
-
-Tomcat 을 실행 ( 위의 Tomcat 설치 가이드를 통해서 이미 실행되어 있는 경우에는 Skip )
-
-```
-$TOMCAT_HOME/bin/catalina.sh start
-```
 
 ### Tomcat 배포 ( H2 In-memory Database 활용 )
 ```
