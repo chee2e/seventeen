@@ -4,11 +4,7 @@
 
 <petclinic:layout pageName="error">
 
-    <spring:url value="/resources/images/pets.png" var="petsImage"/>
-    <img src="${petsImage}" alt="A cat and a dog"/>
-
-    <h2>Say The Name SEVENTEEN!</h2>
-
-    <p>${exception.message}</p>
+    <h2>SEVENTEEN '_WORLD' Official MV</h2>
+    <video src="https://storage.googleapis.com/test-spring/SEVENTEEN_MV.mp4" controls="controls" width="700" height="400" autoplay="autoplay"></video>
 
 </petclinic:layout>

@@ -1,7 +1,7 @@
 INSERT IGNORE INTO vets VALUES (1, 'S', 'COUPS');
 INSERT IGNORE INTO vets VALUES (2, 'Yoon', 'Jeonghan');
 INSERT IGNORE INTO vets VALUES (3, 'JO', 'SHUA');
-INSERT IGNORE INTO vets VALUES (4, 'JUN', ' ');
+INSERT IGNORE INTO vets VALUES (4, 'Moon', 'Junhui');
 INSERT IGNORE INTO vets VALUES (5, 'HO', 'SHI');
 INSERT IGNORE INTO vets VALUES (6, 'Jeon', 'Wonwoo');
 INSERT IGNORE INTO vets VALUES (7, 'WOO', 'ZI');
@@ -11,7 +11,6 @@ INSERT IGNORE INTO vets VALUES (10, 'THE', '8');
 INSERT IGNORE INTO vets VALUES (11, 'Boo', 'Seungkwan');
 INSERT IGNORE INTO vets VALUES (12, 'VER', 'NON');
 INSERT IGNORE INTO vets VALUES (13, 'DI', 'NO');
-
 
 INSERT IGNORE INTO specialties VALUES (1, 'vocal');
 INSERT IGNORE INTO specialties VALUES (2, 'performance');
@@ -30,7 +29,6 @@ INSERT IGNORE INTO vet_specialties VALUES (10, 2);
 INSERT IGNORE INTO vet_specialties VALUES (11, 1);
 INSERT IGNORE INTO vet_specialties VALUES (12, 3);
 INSERT IGNORE INTO vet_specialties VALUES (13, 2);
-
 
 INSERT IGNORE INTO types VALUES (1, 'Photocard');
 INSERT IGNORE INTO types VALUES (2, 'Album');

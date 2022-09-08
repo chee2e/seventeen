@@ -6,7 +6,7 @@
     <artifactId>spring-framework-petclinic</artifactId>
     <version>5.3.9</version>
 
-    <name>Spring Framework Seventeen</name>
+    <name>Spring Framework Petclinic</name>
     <packaging>war</packaging>
     <description>A Spring Framework application based on JSP, Spring MVC, Spring Data JPA, Hibernate and JDBC</description>
     <url>https://spring-petclinic.github.io/</url>
@@ -294,7 +294,7 @@
     <!-- Maven plugin versions are mentioned in order to guarantee the build reproducibility in the long term -->
     <build>
         <defaultGoal>install</defaultGoal>
-        <finalName>seventeen</finalName>
+        <finalName>petclinic</finalName>
         <resources>
             <resource>
                 <directory>${basedir}/src/main/resources</directory>
@@ -432,7 +432,7 @@
                 </executions>
                 <configuration>
                     <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
-                    <cssDestinationFolder>${project.build.directory}/seventeen/resources/css</cssDestinationFolder>
+                    <cssDestinationFolder>${project.build.directory}/petclinic/resources/css</cssDestinationFolder>
                     <wroFile>${basedir}/src/main/wro/wro.xml</wroFile>
                     <extraConfigFile>${basedir}/src/main/wro/wro.properties</extraConfigFile>
                     <contextFolder>${basedir}/src/main/webapp/resources/less</contextFolder>
@@ -524,7 +524,7 @@
                 <db.script>mysql</db.script>
                 <jpa.database>MYSQL</jpa.database>
                 <jdbc.driverClassName>com.mysql.cj.jdbc.Driver</jdbc.driverClassName>
-                <jdbc.url>jdbc:mysql://[Change Me]:3306/seventeen?useUnicode=true</jdbc.url>
+                <jdbc.url>jdbc:mysql://[Change Me]:3306/petclinic?useUnicode=true</jdbc.url>
                 <jdbc.username>root</jdbc.username>
                 <jdbc.password>petclinic</jdbc.password>
             </properties>
